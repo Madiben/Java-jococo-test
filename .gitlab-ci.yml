@@ -1,14 +1,4 @@
-say_hi_for_testers:
+test_our_simply_class:
     stage: test
     script:
-        - echo "Hello Test World!"
-
-say_hi_for_builders:
-    stage: build
-    script:
-        - echo "Hello Builder World!"
-say_hi_for_deploy:
-    stage: deploy
-    script:
-        - echo "Hello Deploy World!"
-
+        - gradle test
