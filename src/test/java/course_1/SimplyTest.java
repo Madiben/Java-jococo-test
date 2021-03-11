@@ -15,12 +15,11 @@ public class SimplyTest {
     }
 
     @Test
-    public void multiplicationTest() {
-        assertEquals(  "10 x 0 must be 0", 0, simpleclass.multiply(10, 0) );
-        assertEquals(  "0 x 10 must be 0", 0, simpleclass.multiply(0, 10) );
-        assertEquals( "0 x 0 must be 0", 0, simpleclass.multiply(0, 0) );
-        assertEquals( "4 x 2 must be 8", 8, simpleclass.multiply(4, 2) );
-        assertEquals( "40 x 2 must be 80", 80, simpleclass.multiply(40, 2) );
+    public void maxTest() {
+        assertEquals( "10 is bigger 0", 10, simpleclass.MaxTwoNumber(10, 0) );
+        assertEquals( "15 is bigger 2", 15, simpleclass.MaxTwoNumber(15, 2) );
+        assertEquals( "952 is bigger 18", 952, simpleclass.MaxTwoNumber(18, 952) );
+        assertEquals( "4 is bigger 1", 4, simpleclass.MaxTwoNumber(1, 4) );
 
     }
 
