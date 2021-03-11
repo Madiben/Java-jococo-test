@@ -1,4 +1,5 @@
 test_our_simply_class:
     stage: test
+    image: gradle
     script:
         - gradle test
