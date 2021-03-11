@@ -1,8 +1,15 @@
 public class Simply 
 {
 
-    public int multiply(int aLeft, int aRight)
+    public int MaxTwoNumber(int aLeft, int aRight)
     {
-        return  aLeft * aRight;
+        int Max = 0;
+        if (aLeft<aRight)
+        {
+            Max = aRight;
+        }else{
+            Max = aLeft;
+        }
+        return Max;
     }
 }
