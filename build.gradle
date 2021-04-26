@@ -1,5 +1,8 @@
-
-apply plugin: 'application'
+plugins {
+    id 'application'
+    id 'java'
+    id 'jacoco'
+}
 
 mainClassName = "Simply"
 
@@ -13,6 +16,12 @@ sourceSets {
             srcDir 'test/java'
         }
     }
+}
+test {
+    finalizedBy jacocoTestReport
+}
+jacocoTestReport {
+    dependsOn test
 }
 
 dependencies {
